@@ -1,0 +1,65 @@
+.button-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+.background-img {
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+
+}
+
+.card-background {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+Card>* {
+    color: white;
+}
+
+.assignment_wrapper {
+    border: 1px dashed lightblue;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.status_assignments {
+    color: green;
+    border: 2px dashed green;
+    border-radius: 45%;
+    padding: 0.8rem;
+}
+
+.assignments {
+    margin-top: 2rem;
+}
+
+.text__style {
+    background-image: linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(255, 124, 0) 100.2%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: red;
+    margin: 0;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.no__assignment {
+    color: aliceblue;
+}
+
+.needs__update__status {
+    color: red;
+    border: 2px dashed red;
+}
+
+.submitted__status {
+    color: aqua;
+    border: 2px dashed aqua;
+}

@@ -1,0 +1,10 @@
+body {
+  background: #323437 !important;
+}
+
+.comment-bubble {
+  background-color: #f9f9f9;
+  border-radius: 1em;
+  margin: 1em 0em;
+  padding: .8em;
+}
