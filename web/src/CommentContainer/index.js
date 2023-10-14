@@ -9,7 +9,7 @@ import { useInterval } from "../Util/useInterval";
 const CommentContainer = (props) => {
     const { assignmentId } = props;
     const user = useUser();
-
+    console.log(props + " props ");
     const emptyComment = {
         id: null,
         text: "",

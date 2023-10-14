@@ -17,7 +17,7 @@ const PrivateRoute = ({ children }) => {
                 console.log("validated", isValid, isLoading)
             });
     } else {
-        <Navigate to="/login" />;
+        return <Navigate to="/login" />;
     }
 
     return isLoading === true ? (<><div style={{ textAlign: "center", color: "white" }}>Loading</div></>) : (isValid === true ? children : <Navigate to='/login' />);

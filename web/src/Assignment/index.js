@@ -67,6 +67,7 @@ const Assignment = () => {
         })
     }, []);
     // console.log(enums)
+    console.log(comments);
     function submitComment() {
 
         if (comment.id) {

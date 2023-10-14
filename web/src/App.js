@@ -11,6 +11,7 @@ import CodeReviewerDashboard from './CodeReviewerDashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CodeReviewerAssignment from './CodeReviewerAssignment';
 import { UserProvider, useUser } from './UserProvider';
+import Register from './Register';
 
 function App() {
   // const jsonBody = {
@@ -37,7 +38,7 @@ function App() {
   console.log(roles)
   return (
     <Routes>
-      <Route path="dashboard" element={
+      <Route path="/dashboard" element={
         roles.find((role) => role === "ROLES_CODE_REVIEWER") ?
           (<PrivateRoute>
             <CodeReviewerDashboard />
@@ -50,8 +51,8 @@ function App() {
       } />
       <Route path="assignments/:id" element={roles.find((role) => role === "ROLES_CODE_REVIEWER") ? <PrivateRoute><CodeReviewerAssignment /></PrivateRoute> : <PrivateRoute><Assignment /></PrivateRoute>} />
 
-
-      <Route path='login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/login' element={<Login />} />
       <Route path="/" element={<Homepage />} />
     </Routes>
   );

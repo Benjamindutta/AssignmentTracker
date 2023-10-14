@@ -6,8 +6,9 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 const Comment = (props) => {
     const user = useUser();
+    console.log(props);
     const decodedJwt = jwt_decode(user.jwt);
-    const { id, createdDate, createdBy, text } = props.commentData;
+    const { id, createdDate, createdBy, text } = props;
     const { emitEditComment, emitDeleteComment } = props;
     const [commentRelativeTime, setCommentRelativeTime] = useState("");
 
